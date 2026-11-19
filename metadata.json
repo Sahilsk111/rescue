@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
-  "requestFramePermissions": [],
+  "name": "Rescue Paws Jammu",
+  "description": "Street Cats & Dogs Rescue Platform for Jammu — Report injured animals in 1 minute, alert nearby volunteers, and adopt rescued pets.",
+  "requestFramePermissions": ["geolocation"],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

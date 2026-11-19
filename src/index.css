@@ -1,1 +1,52 @@
 @import "tailwindcss";
+
+:root {
+  --brand: #c2410c;
+  --brand-strong: #9a3412;
+  --rose: #be123c;
+  --navy: #0b1226;
+  --navy2: #111c3a;
+  --ink: #0f172a;
+  --muted: #526277;
+  --paper: #f8fafc;
+  --line: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  background-color: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.rescue-hero-bg {
+  background-color: #f8fafc;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 14% 8%, rgba(249, 115, 22, 0.1), transparent 34%),
+    radial-gradient(circle at 86% 12%, rgba(244, 63, 94, 0.08), transparent 32%);
+  background-size: 44px 44px, 44px 44px, auto, auto;
+}
+
+.rescue-gradient-btn {
+  background: linear-gradient(92deg, #c2410c 0%, #be123c 58%, #9d174d 108%);
+}
+
+.rescue-gradient-btn:hover {
+  background: linear-gradient(92deg, #9a3412 0%, #be123c 60%, #831843 100%);
+}
+
+.rescue-section-underline::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(92deg, #f97316 0%, #f43f5e 58%, #c026d3 108%);
+  margin-top: 0.5rem;
+}
