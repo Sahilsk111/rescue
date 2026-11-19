@@ -9,6 +9,7 @@ declare global {
 export const createPool = () => {
   if (!global._postgresPool) {
     global._postgresPool = new Pool({
+      connectionString: process.env.DATABASE_URL,
       host: process.env.SQL_HOST,
       port: process.env.SQL_PORT ? Number(process.env.SQL_PORT) : undefined,
       user: process.env.SQL_USER,
